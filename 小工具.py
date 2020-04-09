@@ -39,7 +39,6 @@ def init_tk():
     popint = tk.Button(text="popint", image=photo_popint, bd=5, command=close_popint)
     popint.grid(row=0, column=2)
     w.mainloop()
-    pass
 
 
 def main():
