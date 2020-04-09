@@ -33,9 +33,9 @@ def close_execl():
         b = str(datetime.datetime.now())
         b = b.split(" ")[1]
         b = b.split(".")[0]
-        list_text.insert("end", "Excel程序已结束!{}".format(b))
+        list_text.insert("end", "Excel程序未运行!{}".format(b))
         list_text.see("end")
-        print("Excel程序已结束")
+        print("Excel程序未运行")
 
 
 def close_powerpoint():
@@ -44,9 +44,9 @@ def close_powerpoint():
         b = str(datetime.datetime.now())
         b = b.split(" ")[1]
         b = b.split(".")[0]
-        list_text.insert("end", "Point程序已结束!{}".format(b))
+        list_text.insert("end", "Point程序未运行!{}".format(b))
         list_text.see("end")
-        print("Point程序已结束")
+        print("Point程序未运行")
 
 
 def close_word():
@@ -55,9 +55,9 @@ def close_word():
         b = str(datetime.datetime.now())
         b = b.split(" ")[1]
         b = b.split(".")[0]
-        list_text.insert("end", "Word程序已结束!{}".format(b))
+        list_text.insert("end", "Word程序未运行!{}".format(b))
         list_text.see("end")
-        print("Word程序已结束")
+        print("Word程序未运行！")
 
 
 def main():
