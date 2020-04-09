@@ -41,7 +41,6 @@ def init_tk():
     w.mainloop()
 
 
-
 def main():
     init_tk()
 
