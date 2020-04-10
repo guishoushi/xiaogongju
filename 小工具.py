@@ -55,10 +55,14 @@ class Jxcx(object):
 
         if response["message"] == "用户不存在":
             print("用户不存在！")
-            start()
+            text1.insert("end","用户不存在！")
+            text1.see("end")
+            # start()
         elif response["message"] == "账号密码错误":
-            print("账号密码错误，请输入正确的账号密码")
-            start()
+            print("账号密码错误，请输入正确的账号密码！")
+            text1.insert("end","账号密码错误，请输入正确的账号密码")
+            text1.see("end")
+            # start()
 
     def ResponseJson(self):
         add = cmb.get()
