@@ -4,8 +4,6 @@ from tkinter import ttk
 import datetime
 import base64
 import requests, time, urllib3
-
-
 class Jxcx(object):
     def __init__(self, username, password):
         self.session = requests.Session()
@@ -274,10 +272,13 @@ def init_tk():
 def start():
     username = usernameL.get()
     password = passwordL.get()
-
-    jxcx = Jxcx(username=username, password=password)
-    jxcx.login()
-    jxcx.ResponseJson()
+    if username and password:
+        jxcx = Jxcx(username=username, password=password)
+        jxcx.login()
+        jxcx.ResponseJson()
+    else:
+        text1.insert("end", "账号为空，或者密码为空，请输入账号和密码！" )
+        text1.see("end")
 
 
 def close_execl():
