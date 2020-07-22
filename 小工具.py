@@ -62,6 +62,10 @@ class Jxcx(object):
             print("账号密码错误，请输入正确的账号密码！")
             text1.insert("end", "账号密码错误，请输入正确的账号密码！")
             text1.see("end")
+        elif response["message"] == "该账号已被禁用":
+            print("该账号已被禁用，请输入正确的账号！")
+            text1.insert("end", "该账号已被禁用，请输入正确的账号！")
+            text1.see("end")
             # start()
 
     def ResponseJson(self):
